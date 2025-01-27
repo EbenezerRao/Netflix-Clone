@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:wght@800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+    /* color: white; */
+    height: auto;
+}
+
+.main{
+    background-image: url(assets/Images/bg.jpg);
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+
+.main .box{
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.69;
+    background-color: black;
+}
+
+nav{
+    height: 90px;
+    display: flex;
+    max-width: 80vw;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    color: red;
+    width: 144px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button{
+    position: relative;
+    z-index: 10;
+}
+
+.nb1{
+    background-color: black;
+    width: 120px;
+    opacity: 0.5;
+    padding: 10px;
+    margin: 0px 5px;
+    border-radius: 5px;
+    border: 0.5px solid white;
+    color: rgb(255, 255, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+
+.nb2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 70px;
+    height: 35px;
+    background-color: red;
+    color: white;
+    /* padding: 3px 8px; */
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+    margin: 0px 5px;
+}
+
+.hero{
+    height: 76%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    gap: 23px;
+    padding: 30px;;
+}
+
+/* .hero:first-child{
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.hero:nth-child(2){
+    font-size: 24px;
+    font-weight: 400;
+} */
+
+.hero .s1{
+    font-family: 'poppins';
+    font-size: 58px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.hero .s2{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.hero .s3{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.inbut{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inbut input{
+    background-color: black;
+    width: 344px;
+    opacity: 0.45;
+    padding: 20px;
+    margin: 0px 5px;
+    border-radius: 5px;
+    border: 0.5px solid white;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+
+.inbut button{
+    transition: all 0.3s ease-in-out;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    width: 220px;
+    height: 59px;
+    background-color: red;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: none;
+}
+
+.inbut button a{
+    text-decoration: none;
+    color: white;
+}
+
+.inbut button:hover{
+    cursor: pointer;
+    background-color: rgb(213, 1, 1);
+}
+
+.sep{
+    height: 7px;
+    background-color: rgb(66, 66, 66);
+    margin-top: 36px;
+}
+
+.sechdr{
+    color: white;
+    font-family: 'Poppins','sans-serif';
+    font-size: 18px;
+    margin-top: 30px;
+    padding-left: 50px;
+    font-style: normal;
+}
+
+section{
+    margin: 0px 70px 0px 70px;
+}
+
+.btns{
+    display: flex;
+    justify-content: left;
+    gap: 25px;
+    margin: 10px;
+    padding-left: 40px;
+    height: 30px;
+    width: auto;
+}
+
+.btns :nth-child(1){
+    background-color: rgba(0, 0, 0, 0.718);
+    color: white;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: 0.5px solid white
+}
+
+.btns :nth-child(2){
+    background-color: rgba(0, 0, 0, 0.718);
+    color: white;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: 0.5px solid white
+}
+
+.movs ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 40px;
+}
+
+.movs ul li img{
+    border-radius: 8px;
+} 
+
+.movs ul li img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.mrtj{
+    color: white;
+    font-family: 'Poppins','sans-serif';
+    font-size: 18px;
+    margin-top: 30px;
+    padding-left: 50px;
+    font-style: normal;
+}
+
+.reasons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 55px 0 55px;
+}
+
+
+.reasons .r1{
+    color: white;
+    height: 275px;
+    width: 350px;
+    margin-top: 30px;
+    /* padding-left: 50px; */
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #1E1528, #1D172D, #1F1323);
+}
+
+.reasons .r2{
+    color: white;
+    height: 275px;
+    width: 350px;
+    margin-top: 30px;
+    /* padding-left: 50px; */
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #1E1528, #1D172D, #1F1323);
+
+}
+
+.reasons .r3{
+    color: white;
+    height: 275px;
+    width: 350px;
+    margin-top: 30px;
+    /* padding-left: 50px; */
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #1E1528, #1D172D, #1F1323);
+}
+
+.reasons .r4{
+    color: white;
+    height: 275px;
+    width: 350px;
+    margin-top: 30px;
+    /* padding-left: 50px; */
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #1E1528, #1D172D, #1F1323);
+}
+
+.reasons .r1 .p1{
+    padding-top: 30px;
+    padding-left: 30px;
+    font-size: 26px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+.reasons .r2 .p2{
+    padding-top: 30px;
+    padding-left: 30px;
+    font-size: 26px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+.reasons .r3 .p3{
+    padding-top: 30px;
+    padding-left: 30px;
+    font-size: 26px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.reasons .r4 .p4{
+    padding-top: 30px;
+    padding-left: 30px;
+    font-size: 26px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.reasons .r1 p{
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 18px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.reasons .r2 p{
+    padding-top: 30px;
+    padding-left: 30px;
+    font-size: 18px;
+    padding-right: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.reasons .r3 p{
+    padding-top: 30px;
+    padding-left: 30px;
+    font-size: 18px;
+    padding-right: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.reasons .r4 p{
+    padding-top: 30px;
+    padding-left: 30px;
+    font-size: 18px;
+    padding-right: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.faqs{
+    background-color: black;
+    color: white;
+    padding: 34px;
+}
+
+.faqs h1{
+    color: #ffffff;
+    font-family: 'Poppins','sans-serif';
+    /* font-size: 18px; */
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 40px;
+    font-style: normal;
+}
+
+.faqbox{
+    transition: all 0.25s ease-out;
+    display: flex;
+    justify-content: space-between;
+    background-color: #414141;
+    padding: 30px;
+    margin: 0 20px 0 20px;
+    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+.faqbox:hover{
+    background-color: #6e6e6e;
+    cursor: pointer;
+}
+
+.faqs .fbx1{
+    margin-bottom: 8px;
+}
+
+.faqs .fbx2{
+    margin-bottom: 8px;
+}
+
+.faqs .fbx3{
+    margin-bottom: 8px;
+}
+
+.faqs .fbx4{
+    margin-bottom: 8px;
+}
+
+.faqs .fbx5{
+    margin-bottom: 8px;
+}
+
+.faqs .fbx6{
+    margin-bottom: 8px;
+}
+
+.cntus{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 22px
+}
+
+.cnts{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    color: white;
+}
+
+.cnts input{
+    background-color: black;
+    width: 544px;
+    opacity: 0.45;
+    padding: 20px;
+    margin: 0px 5px;
+    border-radius: 5px;
+    border: 0.5px solid white;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+
+.cnts button{
+    transition: all 0.3s ease-in-out;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    width: 220px;
+    height: 59px;
+    background-color: red;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: none;
+}
+
+.cnts button:hover{
+    cursor: pointer;
+    background-color: rgb(213, 1, 1);
+}
+
+.cnts button a{
+    text-decoration: none;
+    color: white;
+}
+
+.phnum{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.phnum p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 14px;
+}
+
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 23px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-item a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+/* Media Query done completely and purposedly by AI */
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .hero .s1 {
+        font-size: 32px;
+    }
+    .inbut {
+        flex-direction: column;
+    }
+    .reasons {
+        flex-wrap: wrap;
+    }
+    .reasons .r1, .reasons .r2, .reasons .r3, .reasons .r4 {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
