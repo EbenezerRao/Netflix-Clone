@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+body{
+    height: 100vh;
+    background: linear-gradient(to bottom, #5956E4, #521579, #d33f3f);
+}
+
+.bahar{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+
+.clockouter{
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 232px;
+    width: 479px;
+    border: 2px solid #000;
+    border-radius: 24px;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+.clockinner{
+    background-color: #B1B1B1;
+    height: 164px;
+    width: 395px;
+    border: 2px solid #000;
+    border-radius: 26px;
+}
+
+.time{
+    margin: 0;
+    padding: 0;
+    font-family: 'koulen','sans-serif';
+    font-size: 64px;
+    text-align: center;
+}
+
+.date{
+    margin: -40px;
+    padding: 0;
+    text-align: center;
+    font-family: 'koulen','sans-serif';
+    font-size: 45px;
+}
